@@ -1,4 +1,4 @@
-# YAContracts
+# YAContracts [![Build Status](https://travis-ci.org/msempere/yacontracts.svg?branch=master)](https://travis-ci.org/msempere/yacontracts)
 Yet Another Contracts package for Python
 
 ## Installation
