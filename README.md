@@ -8,7 +8,7 @@ pip install yacontracts
 
 ## Usage
 Check input argument:
-```
+```python
 @yacontract(
   args=[('a', assert x: isinstance(x, str), 'a has to be str')])
 def foo(a):
@@ -16,7 +16,7 @@ def foo(a):
 ```
 
 Check several input arguments at the same time:
-```
+```python
 @yacontract(
   args=[
     ('a', assert x: isinstance(x, str), 'a has to be str')
@@ -27,7 +27,7 @@ def foo(a, b, c):
 ```
 
 Check returned values:
-```
+```python
 @yacontract(
   returns=(lambda x: x > 0, 'return value has to be grater than 0'))
 def foo(a, b):
@@ -35,7 +35,7 @@ def foo(a, b):
 ```
 
 Everything together:
-```
+```python
 is_positive_int = lambda x: isinstance(x, int) and x >= 0
 
 @yacontract(
