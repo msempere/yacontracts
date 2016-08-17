@@ -9,7 +9,7 @@ description = (
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-long_description = read('README.rst')
+long_description = read('README.md')
 
 
 def get_version(filename):
@@ -26,7 +26,7 @@ def get_version(filename):
         raise ValueError(filename)
     return version
 
-version = get_version(filename='src/yacontracts/__init__.py')
+version = get_version(filename='src/__init__.py')
 
 
 setup(name='YAContracts',
