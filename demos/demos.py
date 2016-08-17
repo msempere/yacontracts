@@ -1,4 +1,4 @@
-from src.yacontracts import yacontract
+from yacontracts import yacontract
 
 is_positive_int = lambda x: isinstance(x, int) and x >= 0
 
