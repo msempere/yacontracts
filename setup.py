@@ -29,7 +29,7 @@ def get_version(filename):
 version = get_version(filename='src/__init__.py')
 
 
-setup(name='YAContracts',
+setup(name='yacontracts',
       author="MSempere",
       author_email="msempere@gmx.com",
       url='http://msempere.github.com/yacontracts/',
@@ -50,7 +50,7 @@ setup(name='YAContracts',
       download_url='http://github.com/msempere/yacontracts/tarball/%s' % version,
 
       package_dir={'':'src'},
-      packages=find_packages('src'),
+      packages=[''],
       install_requires=['setuptools'],
       tests_require=['pytest'],
       entry_points={},
